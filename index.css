@@ -166,6 +166,12 @@ ul.imgs li{
 .element1 img {
     align-items: center;
     margin-left : 10px;
+    margin-top : 5px;
     width : 330px;
     height : 200px;
+}
+
+table {
+    margin-left : 30px;
+    margin-top : 10px;
 }
