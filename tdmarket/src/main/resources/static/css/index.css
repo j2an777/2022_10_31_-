@@ -55,7 +55,7 @@ h1 {
 }
 
 .section1_box1 {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .slider{
@@ -152,26 +152,37 @@ ul.imgs li{
 .box2_element {
     display : grid;
     grid-template-columns: repeat(3, 1fr);
+    opacity : 1;
 }
 
 .element1 {
-    background-color: whitesmoke;
+    background-color: antiquewhite;
     margin-top: 30px;
-    margin-left : 60px;
+    margin-left : 70px;
     margin-bottom: 10px;
     width : 350px;
     height : 300px;
+    border-radius: 4em;
+}
+
+.element1:hover {
+    transform: translate(0, 20px);
 }
 
 .element1 img {
     align-items: center;
-    margin-left : 10px;
-    margin-top : 5px;
-    width : 330px;
+    width : 350px;
     height : 200px;
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
 }
 
 table {
     margin-left : 30px;
     margin-top : 10px;
+    font-size : 15px;
+}
+
+#last {
+    font-size : 13px;
 }
