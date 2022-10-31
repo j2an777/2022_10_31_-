@@ -36,6 +36,11 @@ public class TraditionalMarketServiceImpl implements TraditionalMarketService{
     }
 
     @Override
+    public List<TraditionalMarket> findWithFoodsStore(Long id) {
+        return tdRepository.findAllWithFoodsStore(id);
+    }
+
+    @Override
     public TraditionalMarket findOne(Long memberId) {
         return tdRepository.findOne(memberId);
     }

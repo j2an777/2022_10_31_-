@@ -18,9 +18,8 @@ public class FoodsStore {
     @Embedded
     private Address address;
 
-    @OneToMany
-    private List<Image> foodStoresImage;
-
-
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "image_id")
+    private Image image;
 
 }

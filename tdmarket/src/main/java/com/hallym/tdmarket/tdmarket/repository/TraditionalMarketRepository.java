@@ -12,4 +12,5 @@ public interface TraditionalMarketRepository {
     List<TraditionalMarket> findAll();
     List<TraditionalMarket> findByName(String name);
 
+    List<TraditionalMarket> findAllWithFoodsStore(Long id);
 }
