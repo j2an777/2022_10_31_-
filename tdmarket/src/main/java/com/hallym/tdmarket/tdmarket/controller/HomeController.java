@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Controller
 @RequiredArgsConstructor
@@ -21,12 +22,13 @@ public class HomeController {
 
     private final ImageService imgService;
     private final FoodStoreService foodStoreService;
+    private final TraditionalMarketService traditionalMarketService;
     @RequestMapping("/")
     public String home(Model model) {
 
-        List<Image> mainImages = imgService.findImages();
-
+        List<Image> mainImages = imgService.findMainImages();
         List<FoodsStore> foodStores = foodStoreService.findFoodStores();
+
         model.addAttribute("mainImages", mainImages);
         model.addAttribute("foodStores", foodStores);
 

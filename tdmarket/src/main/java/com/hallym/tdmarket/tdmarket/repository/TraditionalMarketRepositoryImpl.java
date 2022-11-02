@@ -35,4 +35,9 @@ public class TraditionalMarketRepositoryImpl implements TraditionalMarketReposit
                 .getResultList();
     }
 
+    @Override
+    public List<TraditionalMarket> findAllWithFoodsStore(Long id) {
+        return em.createQuery("select tm from TraditionalMarket tm join fetch tm.foodsStores food", TraditionalMarket.class)
+                .getResultList();
+    }
 }
