@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <link rel = "shortcut icon" type = "image/x-icon" href = "/img/hallymLogo.png">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <title>한림x춘천재래시장</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href = "./css/index.css" type = "text/css" rel = "stylesheet">
+
+    <!-- font link -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id = "head_1"><img id = "hallym" src = "/img/hallymLogo.png"><span> &nbsp;X</span><span><img id = "chun" src = "/img/chuncheonLogo.png">Market</span></h1>
+            <nav>
+                <ul class = "market">
+                    <li><a href = "/component/Nmarket.html">남부 시장</a></li>
+                    <li><a href = "/component/market.html">번개 야시장</a></li>
+                    <li><a href = "/component/Pmarket.html">풍물 시장</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <section>
+            <div class = "section1_container">
+                    <div class = "section1_box1">
+                        <div class = "slider">
+                            <input type = "radio" name = "slide" id = "slide1" checked>
+                            <input type = "radio" name = "slide" id = "slide2" checked>
+                            <input type = "radio" name = "slide" id = "slide3" checked>
+                            <ul id = "imgholder" class = "imgs">
+                                <li><img src = "/img/nmarket.jpg"></li>
+                                <li><img src = "/img/bmarket.jpg"></li>
+                                <li><img src = "/img/pmarket.jpg"></li>
+                            </ul>
+                            <div class = "bullets">
+                                <label for = "slide1">&nbsp;</label>
+                                <label for = "slide2">&nbsp;</label>
+                                <label for = "slide3">&nbsp;</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "section1_box2">
+                        <div class = "box2_title">
+                            <p>춘천 맛집</p>
+                        </div>
+                        <div class = "box2_element">
+                            <div class = "element1">
+                                <img src = "./img/level1.jpg">
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>이름 : </td><td>설악 막국수 춘천닭갈비</td>
+                                        </tr>
+                                        <tr>
+                                            <td>주소 : </td><td>경기도 가평군 설악면 유명로 1675</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class = "element1">
+                                <img src = "./img/level2.jpg">
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>이름 : </td><td>우성 닭갈비</td>
+                                        </tr>
+                                        <tr>
+                                            <td>주소 : </td><td>강원도 춘천시 동면 만천양지길 87</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class = "element1">
+                                <img src = "./img/level3.jpg">
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>이름 : </td><td>카페 감자밭</td>
+                                        </tr>
+                                        <tr>
+                                            <td>주소 : </td><td>강원도 춘천시 신북읍 신샘밭로 674</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class = "element1">
+                                <img src = "./img/level4.jpg">
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>이름 : </td><td>춘천 통나무집 닭갈비</td>
+                                        </tr>
+                                        <tr>
+                                            <td>주소 : </td><td>강원도 춘천시 신북읍 신샘밭로 763</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class = "element1">
+                                <img src = "./img/level5.jpg">
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>이름 : </td><td>허밍연옥</td>
+                                        </tr>
+                                        <tr>
+                                            <td>주소 : </td><td>강원도 춘천시 충열로16번길 29 1F</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class = "element1">
+                                <img src = "./img/level6.jpg">
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>이름 : </td><td>맥쓰 (광교호수공원점)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>주소 : </td><td id = "last">경기도 수원시 영통구 법조로 38 20, 21호</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <script type = "text/javascript" src = "./javascript/index.js"></script>
+    </body>
+</html>
